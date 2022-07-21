@@ -1,0 +1,453 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ max-width: 100%;
+ font-family: serif;
+}
+/*---Анимации----*/
+@keyframes goInLeft
+{
+	0%
+	{
+	   opacity: 0;
+       transform: translateX(-300px);
+	}
+	100%
+	{
+		 opacity: 1;
+       transform: translateX(0px);
+	}
+}
+@keyframes goInRight
+{
+	0%
+	{
+	   opacity: 0;
+       transform: translateX(300px);
+	}
+	100%
+	{
+		 opacity: 1;
+       transform: translateX(0px);
+	}
+}
+@keyframes goInTop
+{
+	0%
+	{
+		opacity: 0;
+		transform: translateY(300px);
+	}
+	100%
+	{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+@keyframes opacityAnimation
+{
+	0%
+	{
+	   opacity: 0;
+	}
+	100%
+	{
+		 opacity: 1;
+	}
+}
+@keyframes Show-header
+{
+	0%
+	{
+		opacity: 0;
+		top: -70px;
+	}
+	100%
+	{
+		opacity: 0.9;
+		top: 0;
+	}
+}
+.animated-right
+{
+	animation-name: goInRight;
+	animation-duration: 2s;
+}
+.animated-left
+{
+	animation-name: goInLeft;
+	animation-duration: 2s;
+}
+.animated-top
+{
+	animation-name: goInTop;
+	animation-duration: 2s;
+}
+.animated-opacity
+{
+	animation-name: opacityAnimation;
+	animation-duration: 2s;
+}
+/*------*/
+a
+{
+	text-decoration: none;
+}
+.container
+{
+    margin: 30px auto;
+    padding: 30px;
+}
+.head-image
+{
+
+	height: 100vh;
+  background-color: rgba(0, 5, 0, 0.5);
+	background-image: url(../images/mainhead.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.head-image-content
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto 0;
+	height: 100%;
+}
+.text-center
+{
+	text-align: center;
+}
+.text-head
+{
+	color: white;
+}
+.text-head-image-main
+{
+	font-size: 40px;
+	display: block;
+	animation-duration: 1s;
+}
+.myName
+{
+	color:#e31b6d;
+}
+.text-head a 
+{   display: block;
+	margin: 40px auto;
+	padding: 20px 20px;
+	border: solid 2px white;
+    width: 50%;
+    color: white;
+    font-size: 16pt;
+    transition: 0.5s;
+    animation-duration: 1s;
+}
+.text-head a:hover
+{
+	border-color: #78DBE2;
+	background-color: #78DBE2;
+}
+nav
+{   
+	  
+    left: 0;
+    background: #1b242f;
+    border-bottom: 3px solid #04c2c9;
+    text-align: left;
+    width: 100%;
+    z-index: 99;
+}
+.container-head
+{
+	margin: 0 10%;
+}
+.header-links
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+.header-links a 
+{
+	display: block;
+	border-bottom: solid 1px transparent;
+	padding: 10px 20px;
+	margin: 10px 0;
+	font-size: 25pt;
+	color: white;
+	transition: 0.5s;
+}
+.header-links a:hover
+{
+	border-color: white;
+}
+.header-links .active
+{
+	border-color: white;
+}
+.who-im-container
+{
+	width: 100%;
+	height: 600px;
+	align-items: center;
+	display: flex;
+}
+.who-im-container img
+{   
+	width: 40%;
+}
+.who-im-container .text
+{ 
+	white-space: 60%;
+	text-align: center;
+	font-size: 18pt;
+	
+}
+.who-im-container .text .title
+{
+	font-size: 25pt;
+}
+.flex 
+{   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header {
+    color: #444649;
+    font-size: 25pt;
+    margin: 3% 0 1% 0;
+}
+.line{
+ position: relative;
+ height: 5px;
+ background-color: #444649;
+ width: 300px;
+}
+.opacity
+{
+	opacity: 0;
+}
+
+
+ 
+/* прогресс бары */
+.bg-style {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5% 0;
+}
+.counter {
+  display: inline-flex;
+  cursor:pointer;
+  width:350px;
+  height:350px;
+  max-width:100%;
+  position:relative;
+  justify-content:center;
+  align-items:center;
+  font-size: 25px;
+  font-weight: 500;
+  transition: height .2s ease-in-out;
+  background: #fff;
+  border-radius:50%;
+}
+.percentage {
+  position:absolute;
+  text-align:center;
+  top:50%;
+  left:0;
+  right:0;
+  vertical-align:middle;
+  transform:translate3d(0,-50%,0);
+}
+canvas {
+  position:absolute;
+  top:0;
+  left:0;
+}
+.pg
+{
+	text-align: center;
+	margin: 0 20px;
+}
+.pg-text
+{
+	font-size: 25pt;
+}
+/* ------- */
+
+/* Карточки проектов */
+.cards
+{
+ display: inline-flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.card
+{
+	text-align: center;
+	transition: 1s;
+	margin: 30px;
+}
+.card img
+{
+	width: 600px;
+	height: 400px;
+	border: solid 1px black;
+	border-radius: 20px;
+	transition: 1s;
+}
+.card .text
+{
+	opacity: 0;
+	font-size: 20pt;
+	color: transparent;
+	border: solid 1px transparent;
+	border-radius: 20px;
+	transition: 1s;
+	margin: 0 10%;
+}
+.card:hover .text
+{
+	color: white;
+	opacity: 1;
+	background-color: orange;
+}
+.card:hover img
+{
+	border-radius: 10px;
+}
+.text-desc
+{
+	font-size: 24pt;
+	color: black;
+}
+
+.list
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 10%;
+}
+.list-item
+{
+	padding: 20px 0;
+	font-size: 20pt;
+	border-top: solid 1px lightgrey;
+	border-left: solid 1px lightgrey;
+	box-shadow:7px 4px 3px 2px grey;
+	margin: 5px 0;
+}
+.list-item .number
+{
+	font-size: 27pt;
+	font-weight: bold;
+	color: #1fd6ff;
+}
+.content
+{
+	width: 100%;
+	margin: 30px 0;
+}
+
+.contacts
+{
+	height: 800px;
+	background-color: #1b242f;
+}
+.c-white
+{
+	color: white;
+}
+.bc-white
+{
+	background-color: white;
+}
+.my-contacts
+{
+ font-size: 30px;
+ color: white;
+}
+.contact
+{
+	margin-top:50px 0;
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+width: 100%;
+}
+#progress .steck
+{
+ text-align: center;
+ display: flex;
+ font-size: 30pt;
+ justify-content: center;
+} 
+#progress .content-steck .steck .logos
+{
+	display: flex;
+	margin: 20px 0;
+}
+#progress .steck .content-steck .logos img 
+{
+	width: 200px;
+	height: 200px;
+	margin: 0 10px;
+}
+
+
+@media screen and (max-width: 900px)
+{
+	.who-im-container .text
+	{
+		font-size: 14pt;
+	}
+	.who-im-container .text .title
+	{
+		font-size: 18pt;
+	}
+	.counter 
+	{
+		width: 250px;
+	}
+	.header-links a 
+	{
+		font-size: 13pt;
+	}
+}
+@media screen and (max-width: 600px)
+{
+	.who-im-container .text
+	{
+		font-size: 10pt;
+	}
+	.who-im-container .text .title
+	{
+		font-size: 15pt;
+	}
+	.counter 
+	{
+		width: 200px;
+	}
+}
+/*
+фиксированная шапка сайта
+*/
+.header-fixed
+{
+	position: fixed;
+	opacity: 0.9;
+	top: 0;
+	left: 0;
+	animation-name: Show-header;
+	animation-duration: 1s;
+}
+/*----*/
+
