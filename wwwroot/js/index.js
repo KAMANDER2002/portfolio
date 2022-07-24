@@ -1,4 +1,4 @@
-
+/*
 const AnimatedItemsLeft = document.querySelectorAll('.a-left');
 if(AnimatedItemsLeft.length > 0)
 {
@@ -26,6 +26,7 @@ if(AnimatedItemsRight.length > 0)
   }
   
 }
+*/
 const AnimatedItemsTop = document.querySelectorAll('.a-top');
 if(AnimatedItemsTop.length > 0)
 {
