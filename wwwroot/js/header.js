@@ -2,7 +2,8 @@ window.addEventListener('scroll',() =>
 {
   const header = document.querySelector('.a-head')
   const header_image = document.querySelector('.head-image')
-   if(window.pageYOffset>(header_image.offsetHeight))
+  const nav_height = document.querySelector('nav');
+   if(window.pageYOffset>(header_image.offsetHeight + nav_height.offsetHeight + 50))
    {
    	header.classList.add('header-fixed');
    }

@@ -59,7 +59,7 @@ function arrow(arr, anim)
 {
     const animHeght = anim.offsetHeight;
     const animOffset = offset(anim).top;
-    const animStart = 3;
+    const animStart = 5;
     let animPoint = window.innerHeight - animHeght / animStart;
 
     if(animHeght>window.inerHeight)
