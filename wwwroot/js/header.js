@@ -30,3 +30,11 @@ window.addEventListener('scroll',()=>
 	});
 		
 });
+$(document).ready(function()
+{
+  $('.burger').click(function(event)
+  { 
+    $('.burger,.header-links').toggleClass('burger-active');
+    $('.container-head').toggleClass('flex-space transition');
+  })
+})
