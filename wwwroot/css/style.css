@@ -426,6 +426,14 @@ width: 100%;
 /*-----------------------------------*/
 @media screen and (max-width: 600px)
 {
+	.who-im-container
+{
+	flex-wrap: wrap;
+}
+.who-im-container img
+{   
+	width: 100%;
+}
 	.who-im-container .text
 {
 	text-align: left;
@@ -497,6 +505,10 @@ width: 100%;
 .who-im-container
 {
 	flex-wrap: wrap;
+}
+.who-im-container img
+{   
+	width: 100%;
 }
 .who-im-container .text
 {
