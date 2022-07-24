@@ -223,9 +223,10 @@ nav
 }
 .line{
  position: relative;
- height: 5px;
+ height: 3px;
  background-color: #444649;
- width: 300px;
+ width: 30%;
+ margin: 0 auto;
 }
 .opacity
 {
@@ -437,6 +438,66 @@ width: 100%;
 		width: 200px;
 	}
 }
+@media screen and (max-width: 370px)
+{
+	.card img
+{
+	width: 120%;
+	height: 90%;
+}
+	body
+	{
+		width: 300px;
+		font-size: 15pt;
+	}
+	.text-desc
+{
+	font-size: 15pt;
+	color: black;
+}
+	.header-fixed
+{
+	min-width: 100%;
+}
+.head
+{
+	min-width: 100%;
+}
+	.header-links a 
+	{
+		font-size: 5pt;
+	}
+	.my-contacts
+	{
+		font-size: 15pt;
+	}
+	.header {
+    font-size: 20pt;
+   }
+   .list-item
+{
+	padding: 10px 0;
+	font-size: 14pt;
+}
+.list-item .number
+{
+	font-size: 17pt;
+}
+}
+@media screen and (max-width: 260px)
+{
+	body
+	{
+		width: 300px;
+	}
+	.my-contacts
+	{
+		font-size: 13pt;
+	}
+	.header {
+    font-size: 15pt;
+   }
+}
 /*
 фиксированная шапка сайта
 */
@@ -447,7 +508,18 @@ width: 100%;
 	top: 0;
 	left: 0;
 	animation-name: Show-header;
-	animation-duration: 1s;
 }
 /*----*/
 
+body
+{
+	width: 100%;
+}
+.main
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 100%;
+}
