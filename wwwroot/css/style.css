@@ -106,6 +106,7 @@ a
 	height: 100vh;
   background-color: rgba(0, 5, 0, 0.5);
 	background-image: url(../images/mainhead.png);
+	background-attachment: fixed;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
