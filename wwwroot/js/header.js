@@ -1,15 +1,20 @@
+ const header = document.querySelector('.a-head')
+  const headerHeight = offset(header).top;
 window.addEventListener('scroll',() =>
 {
-  const header = document.querySelector('.a-head')
-  const header_image = document.querySelector('.head-image')
-  const nav_height = document.querySelector('nav');
-   if(window.pageYOffset>(header_image.offsetHeight))
+   if(window.pageYOffset>headerHeight)
    {
    	header.classList.add('header-fixed');
+    $('.waypoint').css({
+       'paddingTop': header.offsetHeight +'px' 
+    });
    }
    else 
    {
    	header.classList.remove('header-fixed');
+    $('.waypoint').css({
+     'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
+    })
    }
 });
 
